@@ -1,0 +1,387 @@
+.box-top{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 6px;
+	position: relative;
+	z-index: 999;
+	/*margin-top: 130px;*/
+}
+
+.box-top2{
+	width: 96%;
+	height: 0px;
+	margin: 0 auto;
+	background: rgb(240,240,241);
+	border-radius: 6px;
+	position: relative;
+	z-index: 999;
+	margin-top: 130px;
+}
+
+.box-top1{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 6px;
+	position: relative;
+	z-index: 999;
+}
+
+.box-top1 .top-tab{
+	width: 80%;
+	margin-top: 20px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.box-top .top-tab{
+	width: 80%;
+	margin-top: 20px;
+	height: 100px;
+	margin: 0 auto;
+}
+.top-tab li{
+	/*width: 12%;*/
+	width: 10%;
+    height: 100px;
+    float: left;
+}
+.top-tab li p{
+	text-align: center;
+}
+/*我的代办事项*/
+.my-detail{
+	width: 90%;
+	height: 510px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.my-detail .detail1{
+	float: left;
+	width: 62.5%;
+	height: 240px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+.detail1 .detail1-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.detail1  .top-name{
+	float: left;
+	width: 9.33%;
+	height: 30px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.detail1  .top-change{
+	float: left;
+	width: 53%;
+	height: 30px;
+	margin-left: 26%;
+}
+.detail1  .top-change li{
+	float: left;
+	width: 20%;
+	height: 30px;
+	text-align: center;
+}
+.detail1  .top-change .active{
+    color: #1C75BA;
+    border-bottom: 2px solid #1C75BA;
+    font-weight: bold;
+    padding: 0px 6px 4px 6px;
+    box-sizing: border-box
+}
+.detail1  .top-audio{
+	float: right;
+	margin-right: 20px;
+}
+.detail1 .detail1-contain{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+}
+.detail1 .detail1-contain>div{
+	width: 100%;
+    display: none;
+}
+.detail1 .detail1-contain  .active{
+	display: block;
+	height: 190px;
+	overflow-y: auto;
+	background: #fff;
+}
+.detail1-contain .contain1{
+	width: 100%;
+	height: 36px;
+	border-bottom: 1px solid #F9F9F9;
+	box-sizing: border-box;
+	background: #fff;
+}
+.contain1 .contain1-point{
+	float: left;
+	margin-left: 20px;
+	width: 3.73%;
+}
+.contain1 .contain1-point img{
+	margin-top: 8px;
+}
+.contain1 .contain1-article{
+	float: left;
+	width: 58.66%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 34px;
+}
+.contain1 .contain1-name{
+	float: left;
+	width: 13.33%;
+	text-align: center;
+	line-height: 34px;
+}
+.contain1 .contain1-time{
+    float: left;
+    width: 18.66%;
+    text-align: center;
+    line-height: 34px;
+}
+
+
+/*公告*/
+.my-detail .detail2{
+	float: left;
+	width: 36.66%;
+	height: 240px;
+	margin-left: 10px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+
+.detail2 .detail1-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.detail2  .top-name{
+    float: left;
+    width: 10%;
+    height: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.detail2  .top-change{
+	float: left;
+	width: 40.9%;
+	height: 30px;
+	margin-left: 31.81%;
+}
+.detail2  .top-change li{
+	float: left;
+	width: 33%;
+	height: 30px;
+	text-align: center;
+}
+.detail2  .top-change .active{
+    color: #1C75BA;
+    border-bottom: 2px solid #1C75BA;
+    font-weight: bold;
+    padding: 0px 6px 4px 6px;
+    box-sizing: border-box;
+}
+.detail2  .top-audio{
+	float: right;
+	margin-right: 20px;
+}
+/*公告下方内容*/
+
+.detail2 .detail1-contain{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+}
+.detail2 .detail1-contain>div{
+	display: none;
+	
+}
+.detail2 .detail1-contain  .active{
+	display: block;
+	height: 190px;
+	overflow-y: auto;
+	background: #fff;
+}
+.detail2  .detail1-contain .contain1{
+	width: 100%;
+	height: 36px;
+	border-bottom: 1px solid #F9F9F9;
+	box-sizing: border-box;
+	background: #fff;
+}
+.detail2  .contain1 .contain1-point{
+	float: left;
+	margin-left: 20px;
+	width: 6.36%;
+}
+.contain1 .contain1-point img{
+	margin-top: 8px;
+}
+.detail2  .contain1 .contain1-article{
+	float: left;
+	width: 72.72%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 34px;
+}
+.detail2  .contain1 .contain1-time{
+	float: left;
+	width: 15.90%;
+	text-align: center;
+	line-height: 34px;
+}
+
+
+
+
+
+
+
+
+
+/*我的待阅*/
+.my-detail .detail3{
+	float: left;
+	width: 62.5%;
+	height: 240px;
+	margin-top: 10px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+
+.detail3 .detail1-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.detail3  .top-name{
+	float: left;
+	width: 9.33%;
+	height: 30px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.detail3  .top-change{
+	float: left;
+	width: 53%;
+	height: 30px;
+	margin-left: 26%;
+}
+.detail3  .top-change li{
+	float: left;
+	width: 20%;
+	height: 30px;
+	text-align: center;
+}
+.detail3  .top-change .active{
+    color: #1C75BA;
+    border-bottom: 2px solid #1C75BA;
+    font-weight: bold;
+    padding: 0px 6px 4px 6px;
+    box-sizing: border-box;
+}
+.detail3  .top-audio{
+	float: right;
+	margin-right: 20px;
+}
+.detail3 .detail1-contain{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+	background: #fff;
+}
+.detail3 .detail1-contain>div{
+	display: none;
+	
+}
+.detail3 .detail1-contain  .active{
+	display: block;
+	height: 190px;
+	overflow-y: auto;
+}
+.active .contain1:hover{
+	background: #CCE1F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*常用模块*/
+.my-detail .detail4{
+	float: left;
+	width: 36.66%;
+	height: 240px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+.detail4 .detail4-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.detail4-top .top-name{
+	float: left;
+	width: 13%;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.detail4-top .top-img{
+	float: right;
+	width: 20px;
+	margin-right: 20px;
+}
+.detail4-contain{
+	width: 100%;
+	height: 190px;
+	background: #fff;
+}
+.detail4-contain .contain-lists{
+	width: 100%;
+	height: 100%;
+}
+.detail4-contain .contain-lists li{
+	width: 25%;
+	height: 50%;
+	float: left;	
+	box-sizing: border-box;
+}
+.contain-lists li p{
+	text-align: center;
+}
+.contain-lists p img{
+	margin-top: 16px;
+}

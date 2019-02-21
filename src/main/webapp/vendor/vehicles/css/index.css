@@ -1,0 +1,464 @@
+.box-top{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 6px;
+	position: relative;
+	z-index: 999;
+	/*margin-top: 130px;*/
+}
+
+.box-top2{
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+	background: rgb(240,240,241);
+	border-radius: 6px;
+	position: relative;
+	z-index: 999;
+	margin-top: 130px;
+}
+
+.box-top1{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 6px;
+	position: relative;
+	z-index: 999;
+}
+
+.box-top1 .top-tab{
+	width: 80%;
+	margin-top: 20px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.box-top .top-tab{
+	width: 80%;
+	margin-top: 20px;
+	height: 100px;
+	margin: 0 auto;
+}
+.top-tab li{
+	/*width: 12%;*/
+	width: 10%;
+    height: 100px;
+    float: left;
+    padding-top: 10px;
+}
+.top-tab li :nth-child(2){
+	margin-top: 5px;
+}
+.top-tab li p{
+	text-align: center;
+}
+/*我的代办事项*/
+
+
+.my-detail{
+	width: 90%;
+	height: 510px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.my-detailtop{
+	width:100%;
+	height:240px;
+}
+.my-detailbottom{
+	width:100%;
+	height:240px;
+	
+}
+.my-detailtop .detail1{
+	float: left;
+	width: 62.5%;
+	height: 240px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+.detail1 .detail1-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	box-sizing: border-box;
+	position:relative;
+}
+.detail1  .top-name{
+	float: left;
+	height: 50px;
+	line-height:50px;
+	margin-left: 20px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.topul{
+	float: left;	
+	height: 50px;
+	width:690px;
+	max-width:78%;
+	overflow: hidden;
+	position: relative;
+}
+#topulspan{
+	
+}
+.detail1  .top-change{
+	width:1210px;
+	position:absolute;
+	top:0;
+	height: 50px;
+	line-height:50px;	
+		
+}
+.detail1  .top-change li{
+	float: left;
+	height: 50px;
+	margin-right:10px;
+	text-align: center;
+}
+/*.detail1  .top-change li>span{
+	display: block;
+	width: 100%;
+}*/
+.detail1  .top-change .active{
+    color: #1C75BA;
+    border-bottom: 2px solid #1C75BA;
+    font-weight: bold;
+    padding: 0px 6px 4px 6px;
+    box-sizing: border-box
+}
+.badge{
+	margin-left:5px;
+}
+
+.detail1  .top-audio{
+	position:absolute;
+	top:15px;
+	right: 10px;
+	color: #08c;
+	font-weight: bold;
+	cursor:pointer;
+}
+.detail1 .detail1-contain{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+}
+.detail1 .detail1-contain>div{
+	width: 100%;
+    display: none;
+}
+.detail1 .detail1-contain  .active{
+	display: block;
+	height: 190px;
+	overflow-y: auto;
+	background: #fff;
+}
+.detail1-contain .contain1{
+	width: 100%;
+	height: 36px;
+	border-bottom: 1px solid #F9F9F9;
+	box-sizing: border-box;
+	background: #fff;
+	overflow:hidden;
+}
+.contain1 .contain1-point{
+	float: left;
+	margin-left: 20px;
+	width: 3.73%;
+}
+.contain1 .contain1-point img{
+	margin-top: 8px;
+}
+.contain1 .contain1-article{
+	float: left;
+	width: 58.66%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 36px;
+	line-height: 36px;
+}
+.contain1 .contain1-name{
+	float: left;
+	width: 13.33%;
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+}
+.contain1-name-p1{
+	width:50%;
+	float: left;
+	text-align: left;
+	line-height: 34px;
+	overflow:hidden;
+	white-space:nowrap;
+	 text-overflow: ellipsis;
+	
+}
+.contain1-name-p2{
+	width:19%;
+	float: left;
+	text-align: center;
+	line-height: 34px;
+	overflow:hidden;
+	white-space:nowrap;
+	 text-overflow: ellipsis;
+}
+.contain1 .contain1-time{
+    float: left;
+    width: 18.66%;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+}
+
+
+/*公告*/
+.my-detail .detail2{
+	float: right;
+	width: 36.66%;
+	height: 240px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+
+.detail2 .detail1-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	box-sizing: border-box;
+	position: relative;
+}
+.detail2  .top-name{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.detail2  .top-change{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+
+}
+.detail2  .top-change li{
+	float: left;
+	height: 50px;
+	margin-right: 10px;
+	text-align: center;
+}
+.detail2  .top-change .active{
+    color: #1C75BA;
+    border-bottom: 2px solid #1C75BA;
+    font-weight: bold;
+    padding: 0px 6px 4px 6px;
+    box-sizing: border-box;
+}
+.detail2  .top-audio{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+	color: #08c;
+	font-weight: bold;
+	cursor:pointer;
+}
+/*公告下方内容*/
+
+.detail2 .detail1-contain{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+}
+.detail2 .detail1-contain>div{
+	display: none;
+	
+}
+.detail2 .detail1-contain  .active{
+	display: block;
+	height: 190px;
+	overflow-y: auto;
+	background: #fff;
+}
+.detail2  .detail1-contain .contain1{
+	width: 100%;
+	height: 36px;
+	border-bottom: 1px solid #F9F9F9;
+	box-sizing: border-box;
+	background: #fff;
+	overflow:hidden;
+}
+.detail2  .contain1 .contain1-point{
+	float: left;
+	margin-left: 20px;
+	width: 6.36%;
+}
+.contain1 .contain1-point img{
+	margin-top: 8px;
+}
+.detail2  .contain1 .contain1-article{
+	float: left;
+	width: 72.72%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 34px;
+}
+.detail2  .contain1 .contain1-time{
+	float: left;
+	width: 15.90%;
+	text-align: center;
+	line-height: 34px;
+}
+
+
+
+
+
+
+
+
+
+/*我的待阅*/
+.my-detail .detail3{
+	float: left;
+	width: 62.5%;
+	height: 240px;
+	margin-top: 10px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+
+.detail3 .detail1-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	box-sizing: border-box;
+	position:relative;
+}
+.detail3  .top-name{
+	float: left;
+	height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.detail3  .top-change{
+	float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.detail3  .top-change li{
+	float: left;
+	height: 50px;
+	text-align: center;
+	margin-right: 10px;
+}
+.detail3  .top-change .active{
+    color: #1C75BA;
+    border-bottom: 2px solid #1C75BA;
+    font-weight: bold;
+    padding: 0px 6px 4px 6px;
+    box-sizing: border-box;
+}
+.detail3  .top-audio{
+	position: absolute;
+    top: 15px;
+    right: 10px;
+	color: #08c;
+	font-weight: bold;
+	cursor:pointer;
+}
+.detail3 .detail1-contain{
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+	background: #fff;
+}
+.detail3 .detail1-contain>div{
+	display: none;
+	
+}
+.detail3 .detail1-contain  .active{
+	display: block;
+	height: 190px;
+	overflow-y: auto;
+}
+.active .contain1:hover{
+	background: #CCE1F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*常用模块*/
+.my-detail .detail4{
+	float: right;
+	width: 36.66%;
+	height: 240px;
+	margin-top: 10px;
+	border-radius: 6px;
+    overflow: hidden;
+}
+.detail4 .detail4-top{
+	width: 100%;
+	height: 50px;
+	background: #F8F8F8;
+	box-sizing: border-box;
+	position: relative;
+}
+.detail4-top .top-name{
+	float: left;
+	height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+	font-weight: bold;
+}
+.detail4-top .top-img{
+	position: absolute;
+    top: 15px;
+	right: 10px;
+	color: #08c;
+	font-weight: bold;
+	cursor:pointer;
+}
+.detail4-contain{
+	width: 100%;
+	height: 190px;
+	background: #fff;
+}
+.detail4-contain .contain-lists{
+	width: 100%;
+	height: 100%;
+}
+.detail4-contain .contain-lists li{
+	width: 25%;
+	height: 50%;
+	float: left;	
+	box-sizing: border-box;
+}
+.contain-lists li p{
+	text-align: center;
+}
+.contain-lists p img{
+	margin-top: 16px;
+}
