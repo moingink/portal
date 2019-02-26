@@ -2,10 +2,12 @@ package com.yonyou.util.log;
 
 /** 
  * @author zzh
+
  * @version 创建时间：2017年3月2日
  * 记录系统的日志
  */
 import java.net.InetAddress;
+
 import java.net.UnknownHostException;
 import java.util.HashMap;
 
