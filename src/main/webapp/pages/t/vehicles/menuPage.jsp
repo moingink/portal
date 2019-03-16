@@ -151,10 +151,10 @@ response.setDateHeader("Expires", -10);
 	        
 	        	$.ajax({  
 	                    url : "/portal/base?cmd=findNode&type=1&token="+'<%=tokenEntity.getToken()%>'+'&totalCode='+'<%=totalcode%>'+'&ts='+new Date().getTime(),  
-	                    dataType : "json",  
+	                    dataType : "text",  
 	                    type : "post",  
 	                    success : function(data) { 
-	                    	message = data['message'];
+	                    	message = data;
 	                        var html_='<li class="sidebar-brand"><a onclick="reload()" href="#"><%= totalname%> </a></li>';
 	                    	$("#nodePage").html(html_+message);
 	                    	openLable();

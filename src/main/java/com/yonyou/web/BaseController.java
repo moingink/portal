@@ -741,7 +741,7 @@ public class BaseController  implements DataSourceCodeConstants{
 		String lableHtml =BulidMenuLableFactory.getBulidMenuLable(type).bulidMenuByMenuCode(menuData, totalCode, "");
 		// 需要返回的数据有总记录数和行数据
 		System.out.println("############" + lableHtml);
-		String returnJson="{\"message\":\""+lableHtml+"\"}";
+		String returnJson=lableHtml;
 		out.print(returnJson);
 		
 		out.flush();
