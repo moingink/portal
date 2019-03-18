@@ -352,8 +352,8 @@ response.setDateHeader("Expires", -10);
 	                    type : "post",
 	                    data : paramJson,
 	                    success : function(data) { 
-	                    	message = data['message'];
-	                    	$("#First_level_Menu").html(message);
+	                    	//message = data['message'];
+	                    	$("#First_level_Menu").html(data);
 	                    	$(function () { 
 		                    	$("[data-toggle='popover']").popover({
 		                    					 html : true ,
