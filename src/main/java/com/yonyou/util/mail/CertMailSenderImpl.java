@@ -5,7 +5,8 @@ import java.util.Properties;
 
 import javax.mail.internet.MimeUtility;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
@@ -15,7 +16,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
  * 	@author   guomao     
  */
 public class CertMailSenderImpl extends JavaMailSenderImpl{
-	private static Logger log = Logger.getLogger(CertMailSenderImpl.class);
+	private static Logger log = LoggerFactory.getLogger(CertMailSenderImpl.class);
 	SimpleMailMessage mailMessage ;
 
 	public CertMailSenderImpl() {

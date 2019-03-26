@@ -5,7 +5,8 @@ import java.util.Date;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
@@ -16,7 +17,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 public class MailHelper extends JavaMailSenderImpl{
 		
 	private static SimpleDateFormat bartDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-	private static Logger logger = Logger.getLogger(MailHelper.class);
+	private static Logger logger = LoggerFactory.getLogger(MailHelper.class);
 	private SimpleMailMessage mailMessage ;
 	private void  initMailConf(String host,String username,String password)
 	{	
