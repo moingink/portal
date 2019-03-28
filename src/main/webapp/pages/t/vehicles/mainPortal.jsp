@@ -29,76 +29,83 @@ response.setDateHeader("Expires", -10);
 <script src="<%=ContextPath%>/pages/tree/jstree.min.js"></script>
 <script src="<%=ContextPath%>/pages/js/tinyselect.js"></script>
 <link rel="stylesheet" href="<%=ContextPath%>/pages/js/tinyselect.css">
-<link rel="stylesheet" href="<%=ContextPath%>/pages/js/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="<%=ContextPath%>/pages/js/bootstrap-table/src/bootstrap-table.css">
+<link rel="stylesheet"
+	href="<%=ContextPath%>/pages/js/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="<%=ContextPath%>/pages/js/bootstrap-table/src/bootstrap-table.css">
+<link rel="stylesheet"
+	href="<%=ContextPath%>/pages/js/bootstrap/css/calendar.css">
 <link rel="stylesheet" href="<%=ContextPath%>/pages/js/examples.css">
-<link rel="stylesheet" href="<%=ContextPath%>/pages/tree/themes/default/style.min.css" />
+<link rel="stylesheet"
+	href="<%=ContextPath%>/pages/tree/themes/default/style.min.css" />
 <script src="<%=ContextPath%>/vendor/bootstrap/js/respond.js"></script>
 <!-- bootstrapIE8补丁 -->
 <script src="<%=ContextPath%>/vendor/bootstrap/js/html5.js"></script>
 <script src="<%=ContextPath%>/vendor/bootstrap/js/respond.js"></script>
-<link rel="stylesheet" type="text/css" href="<%=path%>/css/resert.css"/>
-<link rel="stylesheet" type="text/css" href="<%=path%>/css/header.css"/>
-<link rel="stylesheet" type="text/css" href="<%=path%>/css/index.css"/>
-	<body >
-		<div class="contain">
-			<jsp:include page="headPage.jsp?isShow=1"></jsp:include>
-			<!--内容tab栏-->
-			
-			<div id="First_level_Menu" >
+<link rel="stylesheet" type="text/css" href="<%=path%>/css/resert.css" />
+<link rel="stylesheet" type="text/css" href="<%=path%>/css/header.css" />
+<link rel="stylesheet" type="text/css" href="<%=path%>/css/index.css" />
+<body>
+	<div class="contain">
+		<jsp:include page="headPage.jsp?isShow=1"></jsp:include>
+		<!--内容tab栏-->
+
+		<div id="First_level_Menu"></div>
+
+		<div class="modal fade" id="myModal999" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel" aria-hidden="true"
+			data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+						<h5 class="modal-title" id="myModalLabel999" style="color: red">
+							初次登陆，请先修改密码！</h5>
+					</div>
+					<div class="modal-body" style="height: 300px">
+						<font id="loginMessage" color="red"></font>
+					</div>
+				</div>
+				<!-- /.modal-content -->
 			</div>
-			
-			 <div class="modal fade" id="myModal999" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" >
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-								&times;
-							</button>
-							<h5 class="modal-title" id="myModalLabel999" style="color:red" >
-								初次登陆，请先修改密码！
-							</h5>
-						</div>
-						<div class="modal-body" style="height:300px">
-							 <font id="loginMessage" color="red"></font>
-						</div>
-					</div><!-- /.modal-content -->
-				</div><!-- /.modal -->
-			</div>
-			
-			<!--详细事项-->
-			<div class="my-detail">
-			
+			<!-- /.modal -->
+		</div>
+
+		<!--详细事项-->
+		<div class="my-detail">
+
 			<div class="my-detailtop">
 				<!--我的代办-->
 				<div class="detail1">
-					<div class="detail1-top">
-						<div class="top-name">我的待办</div>
-						
-						<div class="topul">
+					<div class="detail1-top" style="width: 400px">
+						<div class="top-name">预算执行分析</div>
+
+						<!-- <div class="topul">
 							
 							<ul class="top-change" id='notity_need_handle_count' style="display: none">
 								<li  ><span  class="active" onclick="updateNeedHandleCount(this)" bus_type="#CODE#">#NAME#&nbsp;<span class="badge" style="">#BUS_SIZE#</span></span></li>
 							</ul>
 						</div>
 						<span id="topulspan" class="glyphicon glyphicon-chevron-right" style="color:#08c;margin-top:18px;margin-left:10px;display:none;"></span>
-						<span id="topulspanl" class="glyphicon glyphicon-chevron-left" style="color:#08c;margin-top:18px;margin-left:10px;display:none;"></span>
+						<span id="topulspanl" class="glyphicon glyphicon-chevron-left" style="color:#08c;margin-top:18px;margin-left:10px;display:none;"></span> -->
 						<div class="top-audio">
 							<span onclick="openNotityNeed()" class="moreand">更多</span>
 						</div>
 					</div>
-					<div class="detail1-contain">
+					<div class="detail1-contain" style="width: 400px">
 						<!--div1-->
 						<!--全部对应内容-->
 						<div class="active">
-							<div id="notity_need_dealt" style="display: none" >
+							<%-- <div id="notity_need_dealt" style="display: none" >
 								<div class="contain1"  onclick="plistOnClick('notityNeed',#INDEX#,'审批',this)" >
 									<p class="contain1-point" property='SHOW_NEED_TYPE'><img src="<%=path%>/img/needType#SHOW_NEED_TYPE#.png"/></p>
 									<p class="contain1-article" property='PAGE_MESSAGE' data-toggle="tooltip"  title='#PAGE_MESSAGE#' >#PAGE_MESSAGE#</p>
 									<p class="contain1-name" property='PREVIOUS_USER_NAME' >#PREVIOUS_USER_NAME#</p>
 									<p class="contain1-time" property='NEED_START_TIME' >#NEED_START_TIME#</p>					
 								</div>
-							</div>
+							</div> --%>
+
 							<!--<div class="contain1">
 								<p class="contain1-point"><img src="<%=path%>/img/list1.png"/></p>
 								<p class="contain1-article">上合青岛峰会日程公布:10日上午将举行正式会谈正式会谈正式会谈正式会谈正式会谈正式会谈正式会谈</p>
@@ -111,9 +118,9 @@ response.setDateHeader("Expires", -10);
 				<!--公告-->
 				<div class="detail2">
 					<div class="detail1-top">
-						<div class="top-name">公告</div>
+						<div class="top-name">经营分析支撑</div>
 						<ul class="top-change">
-							<li><span  class="active">全部</span></li>
+							<li><span class="active">全部</span></li>
 							<!-- <li><span>近期</span></li>
 							<li><span>一个月</span></li> -->
 						</ul>
@@ -121,36 +128,60 @@ response.setDateHeader("Expires", -10);
 							<span class="moreand">更多</span>
 						</div>
 					</div>
-					
+
 					<div class="detail1-contain">
 						<!--div1-->
 						<!--全部内容-->
 						<div class="active">
-						<!-- <a href="notice.jsp" id="noticeAll"> -->
-							<div id="notice" style="display: none" style="height:100px;width:400px;">
-								
-								<div class="contain1"  onclick="plistOnClick('notice',#INDEX#,'公告',this)"/>
-									<p class="contain1-point" ><img src="<%=path%>/img/list3.png"/></p>
-									<p class="contain1-name-p1" property='TITLE' >#TITLE#</p>
-									<p class="contain1-name-p2" property='NOTICE_MESSAGE' data-toggle="tooltip" data-placement="top"  title='#NOTICE_MESSAGE#' >#NOTICE_MESSAGE#</p>
-								    <p class="contain1-name-p2" property='STATE_DATE'>#STATE_DATE#</p>			
-								</div>
-									
-							</div>	
-					<!-- </a> -->
-					</div>					
-					</div>	
-						
+							<!-- <a href="notice.jsp" id="noticeAll"> -->
+							<div id="notice" style="display: none"
+								style="height:100px;width:400px;">
+
+								<div class="contain1"
+									onclick="plistOnClick('notice',#INDEX#,'公告',this)" />
+								<p class="contain1-point">
+									<img src="<%=path%>/img/list3.png" />
+								</p>
+								<p class="contain1-name-p1" property='TITLE'>#TITLE#</p>
+								<p class="contain1-name-p2" property='NOTICE_MESSAGE'
+									data-toggle="tooltip" data-placement="top"
+									title='#NOTICE_MESSAGE#'>#NOTICE_MESSAGE#</p>
+								<p class="contain1-name-p2" property='STATE_DATE'>#STATE_DATE#</p>
+							</div>
+
+						</div>
+						<!-- </a> -->
+					</div>
 				</div>
-				
-				
-				<div class="my-detailbottom">
+
+			</div>
+
+			<div
+				style="width: 33%; float: left; margin-left: 1%; height: 240px; background-color: #fff;">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#home" aria-controls="home"
+						role="tab" data-toggle="tab" style="color: #000">代办流程</a></li>
+					<li><a href="#profile" aria-controls="profile" role="tab"
+						data-toggle="tab" style="color: #000">我的申请</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="home"></div>
+					<div class="tab-pane" id="profile"></div>
+				</div>
+			</div>
+
+			<div class="my-detailbottom">
 				<!--我的待阅-->
 				<div class="detail3">
 					<div class="detail1-top">
-						<div class="top-name">我的待阅</div>
-						<ul class="top-change" id='notity_need_pending_count' style="display: none">
-							<li  ><span  class="active" onclick="updateNeedPendingCount(this)" bus_type="#CODE#">#NAME#&nbsp;<span class="badge" style="">#BUS_SIZE#</span></span></li>
+						<div class="top-name">客商管理</div>
+						<ul class="top-change" id='notity_need_pending_count'
+							style="display: none">
+							<li><span class="active"
+								onclick="updateNeedPendingCount(this)" bus_type="#CODE#">#NAME#&nbsp;<span
+									class="badge" style="">#BUS_SIZE#</span></span></li>
 						</ul>
 						<div class="top-audio">
 							<span class="moreand">更多</span>
@@ -160,7 +191,7 @@ response.setDateHeader("Expires", -10);
 						<!--div1-->
 						<!--全部对应内容-->
 						<div class="active">
-							<div id="notity_need_pending" style="display: none">
+							<%-- <div id="notity_need_pending" style="display: none">
 								<div class="contain1"  onclick="plistOnClick('notityNeedPending',#INDEX#,'待阅',this)" >
 										<p class="contain1-point"><img src="<%=path%>/img/list3.png"/></p>
 									<p class="contain1-article" property='BUS_MESSAGE' data-toggle="tooltip"   title='#BUS_MESSAGE#'>#BUS_MESSAGE#</p >
@@ -168,22 +199,24 @@ response.setDateHeader("Expires", -10);
 									<p class="contain1-time" property='NEED_START_TIME'>#NEED_START_TIME#</p >					
 								</div>
 							</div>
-						
-							
+						 --%>
+
 						</div>
-						
-							
-						</div>
+
+
+					</div>
 				</div>
 				<!--常用模块-->
 				<div class="detail4">
 					<div class="detail4-top">
-						<p class="top-name">常用模块</p>
-						<p class="top-img"><span class="moreand">更多</span></p>
+						<p class="top-name">主题访问</p>
+						<p class="top-img">
+							<span class="moreand">更多</span>
+						</p>
 					</div>
 					<div class="detail4-contain">
 						<ul class="contain-lists" id="hh">
-						<%-- 	<li>
+							<%-- 	<li>
 								<p><img src="<%=path%>/img/customer.png"/></p>
 								<p>客户基本资料</p>								
 							</li>
@@ -218,22 +251,40 @@ response.setDateHeader("Expires", -10);
 						</ul>
 					</div>
 				</div>
-			</div>	
-				
+
+				<div class="detail5" style="margin-left: 1%; width: 33%;">
+					<div class="detail5-top">
+						<div class="top-name">日历</div>
+					</div>
+					<div class="detail5-contain">
+						<!--div1-->
+						<!--全部对应内容-->
+						<div class="active">
+							<div id="calendar" class="calendar"></div>
+						</div>
+
+
+					</div>
+				</div>
+
 			</div>
+
 		</div>
+	</div>
+
+	<div
+		style="height: 50px; position: absolute; z-index: 1; float: left; top: 250px; right: 800px;"
+		id="roleList"></div>
+</body>
+<script src="<%=ContextPath%>/pages/js/bootstrap/js/calendar.js"
+	type="text/javascript"></script>
+<script src="<%=ContextPath%>/js/public.js"></script>
+<script src="<%=ContextPath%>/js/bootTable.js"></script>
+<script src="<%=ContextPath%>/js/initPage.js"></script>
+<script src="<%=ContextPath%>/js/bulidPlistPage.js"></script>
+<script src="<%=ContextPath%>/js/bulidNeedTypeCount.js"></script>
+<script type="text/javascript">
 		
-		<div style="height: 50px; position:absolute; z-index:1;float:right;top:250px;right:800px"  id="roleList">
-        	
-        </div>
-	</body>
-	
-	<script src="<%=ContextPath%>/js/public.js"></script>
-	<script src="<%=ContextPath%>/js/bootTable.js"></script>
-	<script src="<%=ContextPath%>/js/initPage.js"></script>
-	<script src="<%=ContextPath%>/js/bulidPlistPage.js"></script>
-	<script src="<%=ContextPath%>/js/bulidNeedTypeCount.js"></script>
-	<script type="text/javascript">
 		 //系统管理
 		 var visit_context ='<%=workFlowContext%>';
 		 var work_flow_context='<%=workFlowContext%>';
@@ -286,7 +337,8 @@ response.setDateHeader("Expires", -10);
 		 }
 		 
 		 $(function() {
-			
+			 	$.noConflict();
+			 	
             	var roleJson = JSON.parse('<%=tokenEntity.roleJsonString%>');
             	var companyJson = JSON.parse('<%=tokenEntity.deptJsonString%>');
             	var html ="<lable>部门： <div>";
@@ -752,16 +804,15 @@ function transToServerForNeedPending(url,jsonData){
 	
 	
 	</script>
-	<style type="text/css">
-	
-	.tooltip-inner {
-	  max-width: 400px;
-	  padding: 3px 8px;
-	  color: #000;
-	  text-align: center;
-	  text-decoration: none;
-	  background-color: rgb(240,240,242);
-	  border-radius: 4px;
-	}
-    </style>
+<style type="text/css">
+.tooltip-inner {
+	max-width: 400px;
+	padding: 3px 8px;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(240, 240, 242);
+	border-radius: 4px;
+}
+</style>
 </html>

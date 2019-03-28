@@ -58,23 +58,24 @@ response.setDateHeader("Expires", -10);
 			<!--头部nav导航栏-->
 			<nav>
 				<div class="contain-fl">
-					<img src="<%=path%>/img/logo.png"/>
+					<%-- <img src="<%=path%>/img/logo.png"/> --%>
+					<span class="title" style="font-family: '华文楷体'">天翼电子商务有限公司</span>
 				</div>
 				
 				<div class="contain-fr">
 					<div class="contain-role"><select id="role_type" class="form-control" name="INPUT_TYPE" data-bv-field="INPUT_TYPE"></select></div>
 					 <div class="contain-role"><select id="company_type" class="form-control" name="INPUT_TYPE" data-bv-field="INPUT_TYPE"></select></div>
-					<span class="nav-customer"><%= loginName%></span>
- 					<span class="nav-customer" onclick="hidePopover();oTable.showModal('修改密码', '<iframe src=\'../pages/t/vehicles/editPassWord.jsp?token=<%= token %>\' width=\'100%\' height=\'250px\' frameborder=\'0\'>您的浏览器不支持iframe，请升级<\/iframe>');" ><img src="<%=path%>/img/set.png"/></span> 
-					<span class="nav-phone" onclick='openAppImages()'><img src="<%=path%>/img/phoneicon.png" /></span>
-					<span id="closeframe" class="nav-close" onclick='closeBus(this)'><img src="<%=path%>/img/close.png"/></span>
+					<span class="nav-customer">欢迎您，<%= loginName%></span>
+ 					<%-- <span class="nav-customer" onclick="hidePopover();oTable.showModal('修改密码', '<iframe src=\'../pages/t/vehicles/editPassWord.jsp?token=<%= token %>\' width=\'100%\' height=\'250px\' frameborder=\'0\'>您的浏览器不支持iframe，请升级<\/iframe>');" ><img src="<%=path%>/img/set.png"/></span>  --%>
+					<%-- <span class="nav-phone" onclick='openAppImages()'><img src="<%=path%>/img/phoneicon.png" /></span> --%>
+					<span id="closeframe" class="nav-close" onclick='closeBus(this)'><img src="<%=path%>/img/close.png" title="退出"/></span>
 					<!-- 下拉切换角色 -->
 				</div>				
 			</nav>
 			<!--顶部背景图片-->
-			<div class="top-background" >
+			<%-- <div class="top-background" >
 				<img src="<%=path%>/img/banners.png"/>
-			</div>
+			</div> --%>
 				
 	</body>
 	<script type="text/javascript">

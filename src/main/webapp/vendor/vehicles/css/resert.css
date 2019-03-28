@@ -119,7 +119,7 @@ select{color:#666;line-height:20px;font-size:13px;}
 .project .first{width:103px;}
 .footer{height:405px;position:relative;background:url(../images/ftbg.jpg) center 0 no-repeat;background-size:100% 100%;zoom:1;}
 .footer .strech{width:1200px;}
-/* 2015-01-12 IE8下不可点击 */
+/* 2015-01-12 IE8涓嬩笉鍙偣鍑� */
 #partO {
     progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/ftbg.jpg', sizingMethod='scale'); ZOOM: 1; BACKGROUND: url(../images/ftbg.jpg) no-repeat center 0px; HEIGHT: 405px; background-size: 100% 100%
 }

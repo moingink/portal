@@ -8,22 +8,34 @@ contain-fr.body{
 	background: #F0F0F2;
 	position: relative;
 }
+nav{
+	background-color:#3aa5ef;
+}
 .contain nav{
 	width:90%;
 	margin: 0 auto;
-	height: 50px;
+	height: 80px;
 	/*position:relative;*/
 }
 .contain-fl{
 	float: left;
 	width: 26.66%;
 	height: 50px;
-	
+	padding:1.7% 0%
 }
-.contain-fl img{
+.contain-fl .title{
+	font-size:25px;
+	font-weight:bolder;
+	font-style:italic;
+	
+	letter-spacing:5px;
+	margin:0px 5px;
+	color:#fff;
+}
+/* .contain-fl img{
 	margin-top: 12px;
 }
-
+ */
 .contain-role{
 	height:42px;
 	padding-top:8px;
@@ -35,6 +47,7 @@ contain-fr.body{
 	float: right;
 	height:100%;
 	width: auto;
+	padding:1.3% 0%
 }
 
 .contain-fr span{
@@ -49,8 +62,8 @@ contain-fr.body{
 }
 .contain-fr .nav-customer{	
 	width:auto;
-	color: #2486D4;
-	font-weight: bold;	
+	color: #fff;
+	/* font-weight: bold; */	
 	padding:0 8px;
 	height:50px;
 	line-height:50px;
@@ -116,4 +129,15 @@ contain-fr.body{
 .top-background img{
 	width: 100%;
 	height: 120px;
+}
+
+.contain-fr .contain-role #role_type{
+	background-color:#3aa5ef;
+	border:0px;
+	color:#fff;
+}
+.contain-fr .contain-role #company_type{
+	background-color:#3aa5ef;
+	border:0px;
+	color:#fff;
 }
