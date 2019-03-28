@@ -14,7 +14,8 @@ import java.util.HashMap;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.yonyou.business.entity.TokenEntity;
 import com.yonyou.business.entity.TokenUtil;
@@ -186,7 +187,7 @@ public class BusLogger {
 
 
 	public static Logger getLogger(String className) {
-		return Logger.getLogger(className);
+		return LoggerFactory.getLogger(className);
 	}
 
 	public static Logger getLogger(Class class_) {
