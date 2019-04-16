@@ -35,8 +35,9 @@
 				<!--内容-->
 				<div class="login-info">
 					<div class="top-info">
-						<img src="<%=ContextPath %>/vendor/vehicles/img/china.png"/>
+						<img src="<%=ContextPath %>/vendor/vehicles/img/tianLogo.jpg"/>
 					</div>
+					<div class='login-title'><h3>管理系统</h3></div>
 					<div class="login-info">
 						<div class="login-list">
 							<p class="name-img"></p>
@@ -122,8 +123,8 @@
 		});*/
 		
 		$("#username").on({
-	    	focus:function(){$("body").css("background-color","lightgray");},  
-	    	blur:function(){$("body").css("background-color","lightblue");}, 
+	    	focus:function(){$("body").css("background-color","lightwhite");},  
+	    	blur:function(){$("body").css("background-color","lightwhite");}, 
 	  	});
 	  	var error ='<%=accounterror%>';
 	  	var username ='<%=username%>';

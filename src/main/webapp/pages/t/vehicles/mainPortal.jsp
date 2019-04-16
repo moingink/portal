@@ -337,7 +337,7 @@ response.setDateHeader("Expires", -10);
 		 }
 		 
 		 $(function() {
-			 	$.noConflict();
+			 	//$.noConflict();
 			 	
             	var roleJson = JSON.parse('<%=tokenEntity.roleJsonString%>');
             	var companyJson = JSON.parse('<%=tokenEntity.deptJsonString%>');
